@@ -11,7 +11,7 @@ namespace Test.Api.Host.Controllers
 {
 	[ApiController]
 	[Route("api/test")]
-	public class TestController : ControllerBase
+	public sealed class TestController : ControllerBase
 	{
 		private readonly ITestService _testService;
 		private readonly Logger _logger = LogManager.GetCurrentClassLogger();

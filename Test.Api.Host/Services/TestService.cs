@@ -4,9 +4,9 @@ using Test.Api.Host.Services.Contracts;
 
 namespace Test.Api.Host.Services
 {
-	public class TestService : ITestService
+	public sealed class TestService : ITestService
 	{
-		private List<TestItem> _testItems;
+		private readonly List<TestItem> _testItems;
 		public TestService()
 		{
 			_testItems = new List<TestItem>() {
